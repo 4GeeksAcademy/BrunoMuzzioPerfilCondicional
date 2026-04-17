@@ -42,12 +42,11 @@ function render(variables = {}) {
     variables.country === null ? "Country" : variables.country
   }</h3>
           <ul class="${variables.socialMediaPosition}">
-            <li><a href="${
-              variables.twitter
-            }"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="${
-              variables.github
-            }"><i class="fab fa-github"></i></a></li>
+            <li><a 
+             href="${variables.twitter}"><i class="fab fa-twitter"></i></a></li>
+            <li><a 
+              href="${variables.github}"
+              ><i class="fab fa-github"></i></a></li>
             <li><a href="${
               variables.linkedin
             }"><i class="fab fa-linkedin"></i></a></li>
