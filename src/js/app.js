@@ -42,16 +42,17 @@ function render(variables = {}) {
     variables.country === null ? "Country" : variables.country
   }</h3>
           <ul class="${variables.socialMediaPosition}">
-            <li><a 
-             href="${variables.twitter}"><i class="fab fa-twitter"></i></a></li>
-            <li><a 
-              href="${variables.github}"
-              ><i class="fab fa-github"></i></a></li>
             <li><a href="${
-              variables.linkedin
+              variables.twitter === null ? "Twitter" : variables.twitter
+            }"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="${
+              variables.github === null ? "Github" : variables.github
+            }"><i class="fab fa-github"></i></a></li>
+            <li><a href="${
+              variables.linkedin === null ? "Linkedin" : variables.linkedin
             }"><i class="fab fa-linkedin"></i></a></li>
             <li><a href="${
-              variables.includeCover
+              variables.instagram === null ? "Instagram" : variables.instagram
             }"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
@@ -66,11 +67,11 @@ window.onload = function() {
     // if includeCover is true the algorithm should show the cover image
     includeCover: true,
     // this is the image's url that will be used as a background for the profile cover
-    background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da",
+    background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da"
     // this is the url for the profile avatar
     avatarURL: "https://randomuser.me/api/portraits/women/42.jpg",
     // social media bar position (position-left or position-right)
-    socialMediaPosition: "position-right",
+    socialMediaPosition: "position-left",
     // social media usernames
     twitter: null,
     github: null,
